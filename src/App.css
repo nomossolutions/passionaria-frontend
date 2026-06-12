@@ -195,8 +195,8 @@
   line-height: 1.6;
 }
 
-/* Products */
-.products {
+/* Catalog */
+.catalog {
   background: var(--white);
 }
 
@@ -212,51 +212,283 @@
   margin-top: 12px;
 }
 
-.products-grid {
+.catalog-card {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-}
-
-.product-card {
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+  align-items: start;
   background: var(--cream);
   border-radius: var(--radius);
-  padding: 30px 25px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  cursor: default;
+  padding: 40px;
+  box-shadow: var(--shadow-sm);
 }
 
-.product-card:hover {
+.catalog-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.catalog-circle {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+}
+
+.catalog-emoji {
+  font-size: 6rem;
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.2));
+}
+
+.catalog-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.catalog-badge {
+  padding: 4px 14px;
+  border-radius: 50px;
+  background: var(--white);
+  color: var(--primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid rgba(18, 63, 40, 0.15);
+}
+
+.catalog-info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.catalog-desc h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.catalog-desc > p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.catalog-features {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.catalog-features li {
+  color: var(--text-light);
+  font-size: 0.88rem;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.pricing-table thead {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.pricing-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.pricing-table td {
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.pricing-table tbody tr {
+  background: var(--white);
+  transition: background 0.2s;
+}
+
+.pricing-table tbody tr:hover {
+  background: rgba(244, 162, 54, 0.06);
+}
+
+.pricing-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-qty {
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.pricing-price {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.pricing-consult {
+  color: var(--accent-dark);
+  font-style: italic;
+}
+
+.pricing-discount {
+  color: var(--primary-light);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.catalog-info .btn {
+  align-self: flex-start;
+}
+
+/* Recipes */
+.recipes {
+  background: var(--cream);
+}
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.recipe-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-md);
 }
 
-.product-card-image {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 18px;
-  background: var(--white);
-  border-radius: 50%;
+.recipe-card-image {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
+  padding: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: var(--shadow-sm);
 }
 
-.product-emoji {
-  font-size: 2.5rem;
+.recipe-emoji {
+  font-size: 3rem;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
 }
 
-.product-card h3 {
+.recipe-card-body {
+  padding: 20px;
+}
+
+.recipe-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 50px;
+  background: rgba(18, 63, 40, 0.1);
+  color: var(--primary);
+  font-size: 0.75rem;
+  font-weight: 600;
   margin-bottom: 10px;
-  font-size: 1.15rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.product-card p {
+.recipe-card-body h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.recipe-card-body > p {
   color: var(--text-light);
-  font-size: 0.9rem;
-  line-height: 1.6;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.recipe-details {
+  border-top: 1px solid var(--cream-dark);
+  padding-top: 10px;
+  font-size: 0.85rem;
+}
+
+.recipe-details summary {
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 0;
+  transition: color 0.3s;
+}
+
+.recipe-details summary:hover {
+  color: var(--accent-dark);
+}
+
+.recipe-details ul,
+.recipe-details ol {
+  padding-left: 20px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--text-light);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.recipe-details ul {
+  list-style: disc;
+}
+
+.recipe-details ol {
+  list-style: decimal;
+}
+
+/* Recipe submit */
+.recipe-submit {
+  margin-top: 50px;
+  padding: 40px;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+}
+
+.recipe-submit h3 {
+  margin-bottom: 8px;
+}
+
+.recipe-submit > p {
+  color: var(--text-light);
+  margin-bottom: 28px;
+}
+
+.recipe-submit-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: left;
+}
+
+.form-textarea-prep {
+  min-height: 120px;
 }
 
 /* Benefits */
@@ -523,7 +755,17 @@
     grid-template-columns: 1fr;
   }
 
-  .products-grid {
+  .catalog-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 30px 24px;
+  }
+
+  .catalog-info .btn {
+    align-self: center;
+  }
+
+  .recipes-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -560,8 +802,31 @@
 }
 
 @media (max-width: 600px) {
-  .products-grid {
+  .catalog-card {
+    padding: 20px 16px;
+  }
+
+  .catalog-circle {
+    width: 160px;
+    height: 160px;
+  }
+
+  .catalog-emoji {
+    font-size: 4rem;
+  }
+
+  .pricing-table th,
+  .pricing-table td {
+    padding: 10px 12px;
+    font-size: 0.8rem;
+  }
+
+  .recipes-grid {
     grid-template-columns: 1fr;
+  }
+
+  .recipe-submit {
+    padding: 24px 16px;
   }
 
   .form-row {
