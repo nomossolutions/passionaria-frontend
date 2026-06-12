@@ -1,19 +1,23 @@
 :root {
   --primary: #123F28;
-  --primary-light: #1B5E3C;
+  --primary-light: #1F7A48;
   --primary-dark: #0D2B1A;
-  --accent: #F4A236;
-  --accent-light: #F9C74F;
-  --accent-dark: #D9891E;
-  --cream: #FDF8F0;
+  --accent: #FF9F1C;
+  --accent-light: #FFB84D;
+  --accent-dark: #E08500;
+  --accent-glow: rgba(255, 159, 28, 0.3);
+  --cream: #FFFCF5;
   --cream-dark: #F5EDE0;
-  --text: #2D2D2D;
+  --text: #1A1A1A;
   --text-light: #666666;
   --white: #FFFFFF;
+  --black: #0A0A0A;
+  --section-dark: #0F1F16;
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
-  --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
-  --radius: 12px;
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.1);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.15);
+  --shadow-glow: 0 0 25px rgba(255, 159, 28, 0.2);
+  --radius: 16px;
   --radius-sm: 8px;
   --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --heading: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
@@ -33,7 +37,7 @@
 
 body {
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -52,25 +56,45 @@ ul {
   list-style: none;
 }
 
+::selection {
+  background: var(--accent);
+  color: var(--white);
+}
+
 h1, h2, h3, h4 {
   font-family: var(--heading);
   color: var(--primary-dark);
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
-h1 { font-size: clamp(2.5rem, 6vw, 4rem); }
-h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); }
-h3 { font-size: clamp(1.2rem, 2.5vw, 1.5rem); }
+h1 {
+  font-size: clamp(2.8rem, 7vw, 4.5rem);
+  font-weight: 900;
+  letter-spacing: -2px;
+}
+
+h2 {
+  font-size: clamp(2rem, 4.5vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
 
 .container {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
 section {
-  padding: 80px 0;
+  padding: 100px 0;
+  position: relative;
 }
 
 .btn {
@@ -88,14 +112,14 @@ section {
 }
 
 .btn-primary {
-  background: var(--accent);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 100%);
   color: var(--white);
 }
 
 .btn-primary:hover {
-  background: var(--accent-dark);
+  background: linear-gradient(135deg, var(--accent-dark) 0%, var(--accent) 100%);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-glow);
 }
 
 .btn-secondary {
