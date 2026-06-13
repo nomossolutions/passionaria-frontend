@@ -1,4 +1,5 @@
-import './App.css'
+import "./App.css";
+import logo from "./assets/passionaria-logo.jpeg";
 
 function App() {
   return (
@@ -6,7 +7,7 @@ function App() {
       <header className="header">
         <div className="container header-inner">
           <div className="logo">
-            <span className="logo-icon">&#127825;</span>
+            <img src={logo} className="logo-img" alt="Logo Passionaria" />
             <span className="logo-text">Passionaria</span>
           </div>
           <nav className="nav">
@@ -52,12 +53,17 @@ function App() {
             <div className="feature-card">
               <div className="feature-icon">&#127793;</div>
               <h3>100% Natural</h3>
-              <p>Sin conservantes ni aditivos artificiales. Cultivado de forma sostenible.</p>
+              <p>
+                Sin conservantes ni aditivos artificiales. Cultivado de forma
+                sostenible.
+              </p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">&#127758;</div>
               <h3>Origen Responsable</h3>
-              <p>Producido con prácticas agrícolas que cuidan el medio ambiente.</p>
+              <p>
+                Producido con prácticas agrícolas que cuidan el medio ambiente.
+              </p>
             </div>
             <div className="feature-card">
               <div className="feature-icon">&#128200;</div>
@@ -73,8 +79,9 @@ function App() {
           <div className="section-header">
             <h2>Pulpa de Maracuyá</h2>
             <p>
-              Nuestra pulpa congelada es 100% natural, sin conservantes ni azúcares añadidos.
-              Ideal para jugos, helados, repostería, coctelería y gastronomía en general.
+              Nuestra pulpa congelada es 100% natural, sin conservantes ni
+              azúcares añadidos. Ideal para jugos, helados, repostería,
+              coctelería y gastronomía en general.
             </p>
           </div>
           <div className="catalog-card">
@@ -92,12 +99,15 @@ function App() {
               <div className="catalog-desc">
                 <h3>Pulpa Congelada de Maracuyá</h3>
                 <p>
-                  Obtenida de maracuyá seleccionado en su punto óptimo de maduración.
-                  Proceso de congelado rápido que preserva el sabor, aroma y propiedades
-                  nutricionales de la fruta fresca.
+                  Obtenida de maracuyá seleccionado en su punto óptimo de
+                  maduración. Proceso de congelado rápido que preserva el sabor,
+                  aroma y propiedades nutricionales de la fruta fresca.
                 </p>
                 <ul className="catalog-features">
-                  <li>&#10003; Rendimiento: 1 kg de pulpa equivale a 3 kg de fruta fresca</li>
+                  <li>
+                    &#10003; Rendimiento: 1 kg de pulpa equivale a 3 kg de fruta
+                    fresca
+                  </li>
                   <li>&#10003; Empaque al vacío para máxima conservación</li>
                   <li>&#10003; Vida útil: 12 meses en congelación (-18°C)</li>
                   <li>&#10003; Certificación HACCP y BPM</li>
@@ -152,7 +162,8 @@ function App() {
           <div className="section-header">
             <h2>Recetas con Maracuyá</h2>
             <p>
-              Descubre formas deliciosas de usar nuestra pulpa de maracuyá en la cocina.
+              Descubre formas deliciosas de usar nuestra pulpa de maracuyá en la
+              cocina.
             </p>
           </div>
           <div className="recipes-grid">
@@ -163,7 +174,10 @@ function App() {
               <div className="recipe-card-body">
                 <div className="recipe-tag">Bebida</div>
                 <h3>Jugo Natural de Maracuyá</h3>
-                <p>Refrescante jugo tropical, perfecto para empezar el día con energía.</p>
+                <p>
+                  Refrescante jugo tropical, perfecto para empezar el día con
+                  energía.
+                </p>
                 <details className="recipe-details">
                   <summary>Ingredientes</summary>
                   <ul>
@@ -176,9 +190,14 @@ function App() {
                 <details className="recipe-details">
                   <summary>Preparación</summary>
                   <ol>
-                    <li>En una licuadora, agrega la pulpa de maracuyá y el agua fría.</li>
+                    <li>
+                      En una licuadora, agrega la pulpa de maracuyá y el agua
+                      fría.
+                    </li>
                     <li>Licúa por 30 segundos hasta integrar bien.</li>
-                    <li>Cuela la mezcla para retirar las semillas (opcional).</li>
+                    <li>
+                      Cuela la mezcla para retirar las semillas (opcional).
+                    </li>
                     <li>Endulza al gusto y sirve con abundante hielo.</li>
                   </ol>
                 </details>
@@ -191,7 +210,10 @@ function App() {
               <div className="recipe-card-body">
                 <div className="recipe-tag">Postre</div>
                 <h3>Mousse de Maracuyá</h3>
-                <p>Esponjoso y cremoso mousse con el equilibrio perfecto entre dulce y ácido.</p>
+                <p>
+                  Esponjoso y cremoso mousse con el equilibrio perfecto entre
+                  dulce y ácido.
+                </p>
                 <details className="recipe-details">
                   <summary>Ingredientes</summary>
                   <ul>
@@ -204,11 +226,24 @@ function App() {
                 <details className="recipe-details">
                   <summary>Preparación</summary>
                   <ol>
-                    <li>En un bol, mezcla la pulpa de maracuyá con la leche condensada.</li>
-                    <li>Agrega la crema de leche y bate hasta que esté homogéneo.</li>
-                    <li>Si deseas más firmeza, hidrata la gelatina y agrégala tibia a la mezcla.</li>
-                    <li>Vierte en copas individuales y refrigera por al menos 3 horas.</li>
-                    <li>Decora con semillas de maracuyá frescas antes de servir.</li>
+                    <li>
+                      En un bol, mezcla la pulpa de maracuyá con la leche
+                      condensada.
+                    </li>
+                    <li>
+                      Agrega la crema de leche y bate hasta que esté homogéneo.
+                    </li>
+                    <li>
+                      Si deseas más firmeza, hidrata la gelatina y agrégala
+                      tibia a la mezcla.
+                    </li>
+                    <li>
+                      Vierte en copas individuales y refrigera por al menos 3
+                      horas.
+                    </li>
+                    <li>
+                      Decora con semillas de maracuyá frescas antes de servir.
+                    </li>
                   </ol>
                 </details>
               </div>
@@ -220,7 +255,10 @@ function App() {
               <div className="recipe-card-body">
                 <div className="recipe-tag">Coctelería</div>
                 <h3>Maracuyá Sour</h3>
-                <p>Un twist tropical del clásico coctel peruano, fresco y vibrante.</p>
+                <p>
+                  Un twist tropical del clásico coctel peruano, fresco y
+                  vibrante.
+                </p>
                 <details className="recipe-details">
                   <summary>Ingredientes</summary>
                   <ul>
@@ -234,8 +272,14 @@ function App() {
                 <details className="recipe-details">
                   <summary>Preparación</summary>
                   <ol>
-                    <li>En una coctelera, agrega pisco, pulpa de maracuyá, jarabe y clara de huevo.</li>
-                    <li>Agita en seco (sin hielo) por 15 segundos para emulsionar la clara.</li>
+                    <li>
+                      En una coctelera, agrega pisco, pulpa de maracuyá, jarabe
+                      y clara de huevo.
+                    </li>
+                    <li>
+                      Agita en seco (sin hielo) por 15 segundos para emulsionar
+                      la clara.
+                    </li>
                     <li>Agrega hielo y agita nuevamente por 10 segundos.</li>
                     <li>Cuela y sirve en un vaso bajo.</li>
                     <li>Decora con 3 gotas de amargo y una rodaja de limón.</li>
@@ -250,7 +294,10 @@ function App() {
               <div className="recipe-card-body">
                 <div className="recipe-tag">Helado</div>
                 <h3>Helado de Maracuyá</h3>
-                <p>Cremoso helado artesanal con el sabor intenso de la fruta de la pasión.</p>
+                <p>
+                  Cremoso helado artesanal con el sabor intenso de la fruta de
+                  la pasión.
+                </p>
                 <details className="recipe-details">
                   <summary>Ingredientes</summary>
                   <ul>
@@ -265,11 +312,24 @@ function App() {
                   <summary>Preparación</summary>
                   <ol>
                     <li>Calienta la crema a fuego medio sin que hierva.</li>
-                    <li>Bate las yemas con el azúcar hasta que estén espumosas.</li>
-                    <li>Vierte la crema caliente sobre las yemas sin dejar de batir.</li>
-                    <li>Regresa la mezcla al fuego y cocina a baño María hasta espesar.</li>
-                    <li>Agrega la pulpa de maracuyá y la vainilla, mezcla bien.</li>
-                    <li>Enfría y lleva a la heladera según las instrucciones del fabricante.</li>
+                    <li>
+                      Bate las yemas con el azúcar hasta que estén espumosas.
+                    </li>
+                    <li>
+                      Vierte la crema caliente sobre las yemas sin dejar de
+                      batir.
+                    </li>
+                    <li>
+                      Regresa la mezcla al fuego y cocina a baño María hasta
+                      espesar.
+                    </li>
+                    <li>
+                      Agrega la pulpa de maracuyá y la vainilla, mezcla bien.
+                    </li>
+                    <li>
+                      Enfría y lleva a la heladera según las instrucciones del
+                      fabricante.
+                    </li>
                   </ol>
                 </details>
               </div>
@@ -278,15 +338,45 @@ function App() {
 
           <div className="recipe-submit">
             <h3>Comparte tu receta</h3>
-            <p>¿Tienes una receta con maracuyá que quieras compartir? ¡Envíanosla!</p>
-            <form className="recipe-submit-form" onSubmit={(e) => e.preventDefault()}>
+            <p>
+              ¿Tienes una receta con maracuyá que quieras compartir?
+              ¡Envíanosla!
+            </p>
+            <form
+              className="recipe-submit-form"
+              onSubmit={(e) => e.preventDefault()}
+            >
               <div className="form-row">
-                <input type="url" placeholder="URL de la imagen (opcional)" className="form-input" />
-                <input type="text" placeholder="Nombre de la receta" className="form-input" required />
+                <input
+                  type="url"
+                  placeholder="URL de la imagen (opcional)"
+                  className="form-input"
+                />
+                <input
+                  type="text"
+                  placeholder="Nombre de la receta"
+                  className="form-input"
+                  required
+                />
               </div>
-              <input type="text" placeholder="Categoría (Ej: Bebida, Postre, Coctelería)" className="form-input" required />
-              <textarea placeholder="Ingredientes (uno por línea)" className="form-textarea" rows={4} required />
-              <textarea placeholder="Preparación (pasos detallados)" className="form-textarea form-textarea-prep" rows={5} required />
+              <input
+                type="text"
+                placeholder="Categoría (Ej: Bebida, Postre, Coctelería)"
+                className="form-input"
+                required
+              />
+              <textarea
+                placeholder="Ingredientes (uno por línea)"
+                className="form-textarea"
+                rows={4}
+                required
+              />
+              <textarea
+                placeholder="Preparación (pasos detallados)"
+                className="form-textarea form-textarea-prep"
+                rows={5}
+                required
+              />
               <button type="submit" className="btn btn-primary form-submit">
                 Enviar receta
               </button>
@@ -301,35 +391,48 @@ function App() {
             <div className="benefits-content">
               <h2>¿Por qué elegir Passionaria?</h2>
               <p className="benefits-lead">
-                El maracuyá es una fruta excepcional con beneficios únicos para la salud y la industria.
+                El maracuyá es una fruta excepcional con beneficios únicos para
+                la salud y la industria.
               </p>
               <div className="benefits-list">
                 <div className="benefit-item">
                   <div className="benefit-dot" />
                   <div>
                     <strong>Rico en antioxidantes</strong>
-                    <p>Alto contenido de vitamina C y compuestos fenólicos que combaten el estrés oxidativo.</p>
+                    <p>
+                      Alto contenido de vitamina C y compuestos fenólicos que
+                      combaten el estrés oxidativo.
+                    </p>
                   </div>
                 </div>
                 <div className="benefit-item">
                   <div className="benefit-dot" />
                   <div>
                     <strong>Propiedades relajantes</strong>
-                    <p>La pasiflora es conocida por sus efectos calmantes y reguladores del sueño.</p>
+                    <p>
+                      La pasiflora es conocida por sus efectos calmantes y
+                      reguladores del sueño.
+                    </p>
                   </div>
                 </div>
                 <div className="benefit-item">
                   <div className="benefit-dot" />
                   <div>
                     <strong>Alto valor nutricional</strong>
-                    <p>Fuente de fibra, vitaminas A y C, potasio y hierro en cada porción.</p>
+                    <p>
+                      Fuente de fibra, vitaminas A y C, potasio y hierro en cada
+                      porción.
+                    </p>
                   </div>
                 </div>
                 <div className="benefit-item">
                   <div className="benefit-dot" />
                   <div>
                     <strong>Versatilidad industrial</strong>
-                    <p>Ideal para alimentos, bebidas, cosméticos y productos farmacéuticos.</p>
+                    <p>
+                      Ideal para alimentos, bebidas, cosméticos y productos
+                      farmacéuticos.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -396,11 +499,26 @@ function App() {
             </div>
             <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
               <div className="form-row">
-                <input type="text" placeholder="Nombre" className="form-input" required />
-                <input type="email" placeholder="Email" className="form-input" required />
+                <input
+                  type="text"
+                  placeholder="Nombre"
+                  className="form-input"
+                  required
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="form-input"
+                  required
+                />
               </div>
               <input type="text" placeholder="Asunto" className="form-input" />
-              <textarea placeholder="Mensaje" className="form-textarea" rows={5} required />
+              <textarea
+                placeholder="Mensaje"
+                className="form-textarea"
+                rows={5}
+                required
+              />
               <button type="submit" className="btn btn-primary form-submit">
                 Enviar mensaje
               </button>
@@ -430,12 +548,22 @@ function App() {
         </div>
         <div className="footer-bottom">
           <div className="container">
-            <p>&copy; {new Date().getFullYear()} <a href="https://www.nomosdigital.com.ar/" target="_blank" rel="noopener noreferrer">Nomos Digital</a>. Todos los derechos reservados.</p>
+            <p>
+              &copy; {new Date().getFullYear()}{" "}
+              <a
+                href="https://www.nomosdigital.com.ar/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Nomos Digital
+              </a>
+              . Todos los derechos reservados.
+            </p>
           </div>
         </div>
       </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
