@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import recipeImg1 from "../assets/maracuya3.png";
-import recipeImg2 from "../assets/maracuya4.png";
 import recipeImg3 from "../assets/maracuya5.png";
 import recipeImg4 from "../assets/maracuya6.png";
 
