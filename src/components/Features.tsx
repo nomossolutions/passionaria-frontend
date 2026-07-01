@@ -1,30 +1,27 @@
-import { Leaf, Globe, TrendingUp } from "lucide-react";
-import decorImg from "../assets/maracuya7.png";
+import { Leaf, Globe, Sparkles } from "lucide-react";
 
 const features = [
   {
     icon: Leaf,
-    title: "100% Natural",
-    desc: "Sin conservantes ni aditivos artificiales. Cultivado de forma sostenible.",
+    title: "Sin aditivos, sin sorpresas",
+    desc: "Solo fruta. Sin conservantes, sin colorantes, sin azúcar añadida. Lo que ves en la etiqueta es todo lo que hay.",
   },
   {
     icon: Globe,
-    title: "Origen Responsable",
-    desc: "Producido con prácticas agrícolas que cuidan el medio ambiente.",
+    title: "Fruta de origen conocido",
+    desc: "Maracuyá cosechado en Tucumán, en su punto óptimo de maduración. Sabemos de dónde viene cada lote.",
   },
   {
-    icon: TrendingUp,
-    title: "Alta Trazabilidad",
-    desc: "Control de calidad en cada etapa, del campo a tu industria.",
+    icon: Sparkles,
+    title: "Lista para usar hoy",
+    desc: "Descongelá, medí y usá. Sin pelar, sin procesar, sin merma. Más tiempo para hacer lo que mejor sabés hacer.",
   },
 ];
 
 export default function Features() {
   return (
     <section className="features">
-      <div className="features-decor" aria-hidden="true">
-        <img src={decorImg} alt="" />
-      </div>
+      
       <div className="container">
         <div className="features-grid">
           {features.map((f) => (

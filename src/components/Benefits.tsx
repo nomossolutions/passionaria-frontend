@@ -1,27 +1,23 @@
 import { Award, Building2, TrendingUp } from "lucide-react";
 
 const statCards = [
-  { number: "15+", label: "Años de experiencia", icon: Award },
-  { number: "50+", label: "Clientes satisfechos", icon: Building2 },
-  { number: "100%", label: "Productos naturales", icon: TrendingUp },
+  { number: "5+", label: "Años elaborando pulpa", icon: Award },
+  { number: "50+", label: "Emprendedores que confían", icon: Building2 },
+  { number: "100%", label: "Fruta natural, sin aditivos", icon: TrendingUp },
 ];
 
 const benefits = [
   {
-    title: "Calidad industrial consistente",
-    desc: "Cada lote pasa por controles de calidad rigurosos. Sabor, color y textura uniformes en cada entrega.",
+    title: "Sabor auténtico en cada receta",
+    desc: "Pulpa sin conservantes ni colorantes artificiales. El sabor real del maracuyá que distingue tus productos artesanales.",
   },
   {
-    title: "Rendimiento superior",
-    desc: "1 kg de nuestra pulpa equivale a 3 kg de fruta fresca. Menos almacenamiento, más rendimiento.",
+    title: "Más rendimiento, menos desperdicio",
+    desc: "1 kg de pulpa equivale a 3 kg de fruta fresca. Producís más con menos, sin tiempo ni esfuerzo en el procesado.",
   },
   {
-    title: "Certificaciones que importan",
-    desc: "Procesos certificados HACCP y BPM. La tranquilidad de trabajar con un proveedor que cumple estándares internacionales.",
-  },
-  {
-    title: "Logística confiable",
-    desc: "Entregas programadas a tu industria en Tucumán y el norte argentino. Cadena de frío garantizada.",
+    title: "Pedidos a tu escala",
+    desc: "Sin mínimos imposibles. Adaptamos las cantidades a tu producción semanal o mensual, con entregas en Tucumán y el norte argentino.",
   },
 ];
 
@@ -33,8 +29,7 @@ export default function Benefits() {
           <div className="benefits-content">
             <h2>¿Por qué elegir Passionaria?</h2>
             <p className="benefits-lead">
-              Más de 15 años abasteciendo a la industria argentina con pulpa de
-              maracuyá de la más alta calidad.
+              La pulpa que tu emprendimiento necesita: natural, lista para usar y con el sabor que tus clientes van a notar.
             </p>
             <div className="benefits-list">
               {benefits.map((b) => (

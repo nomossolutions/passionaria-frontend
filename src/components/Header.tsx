@@ -46,7 +46,6 @@ export default function Header() {
             <a href="#catalogo" onClick={closeMenu}>Catálogo</a>
             <a href="#recetas" onClick={closeMenu}>Recetas</a>
             <a href="#beneficios" onClick={closeMenu}>Beneficios</a>
-            <a href="#testimonios" onClick={closeMenu}>Testimonios</a>
             <a href="#contacto" onClick={closeMenu}>Contacto</a>
           </div>
           <a

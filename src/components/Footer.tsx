@@ -1,4 +1,4 @@
-import { Leaf } from "lucide-react";
+
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -8,10 +8,10 @@ export default function Footer() {
       <div className="container footer-inner">
         <div className="footer-brand">
           <div className="footer-logo">
-            <Leaf size={28} strokeWidth={1.5} aria-hidden="true" />
+            
             <span className="logo-text">Passionaria</span>
           </div>
-          <p>Pulpa de maracuyá de la más alta calidad para la industria argentina.</p>
+          <p>Pulpa de maracuyá 100% natural, hecha con dedicación para emprendedores y negocios que eligen lo auténtico.</p>
         </div>
         <div className="footer-links">
           <h4>Producto</h4>
@@ -22,7 +22,6 @@ export default function Footer() {
         <div className="footer-links">
           <h4>Compañía</h4>
           <a href="#beneficios">Nosotros</a>
-          <a href="#testimonios">Testimonios</a>
           <a href="#contacto">Contacto</a>
         </div>
       </div>
